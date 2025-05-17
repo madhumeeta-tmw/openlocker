@@ -1,4 +1,4 @@
-// src/App.js
+// src/App.js test
 import React from 'react';
 import LockerControl from './components/LockerControl';
 
