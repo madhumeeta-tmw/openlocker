@@ -1,6 +1,8 @@
+// src/components/LockerControl.js
+
 import React, { useState } from 'react';
 import { openLocker } from '../services/lockerService';
-import './LockerControl.css'; // component-specific styless
+import './LockerControl.css';
 
 function LockerControl() {
   const [loading, setLoading] = useState(null);
