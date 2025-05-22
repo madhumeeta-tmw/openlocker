@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/openlocker/static/css/main.0efee23c.css",
-    "main.js": "/openlocker/static/js/main.771b8574.js",
+    "main.js": "/openlocker/static/js/main.bf59ca85.js",
     "index.html": "/openlocker/index.html",
     "main.0efee23c.css.map": "/openlocker/static/css/main.0efee23c.css.map",
-    "main.771b8574.js.map": "/openlocker/static/js/main.771b8574.js.map"
+    "main.bf59ca85.js.map": "/openlocker/static/js/main.bf59ca85.js.map"
   },
   "entrypoints": [
     "static/css/main.0efee23c.css",
-    "static/js/main.771b8574.js"
+    "static/js/main.bf59ca85.js"
   ]
 }
