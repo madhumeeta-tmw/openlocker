@@ -1,19 +1,17 @@
-// src/components/LockerControl.js
-
 import React, { useState } from 'react';
 import { openLocker } from '../services/lockerService';
 import './LockerControl.css';
 
-function LockerControl() {
+export default function LockerControl() {
   const [loading, setLoading] = useState(null);
-  const [error, setError] = useState('');
+  const [error, setError]     = useState('');
 
   const handleOpen = async (id) => {
     setError('');
     setLoading(id);
     try {
-      await openLocker(id);
-      alert(`Command sent: Open Locker ${id}`);
+      const msg = await openLocker(id);
+      alert(msg.message || JSON.stringify(msg));
     } catch (err) {
       console.error(err);
       setError(`Failed to open locker ${id}: ${err.message}`);
@@ -41,5 +39,3 @@ function LockerControl() {
     </div>
   );
 }
-
-export default LockerControl;
